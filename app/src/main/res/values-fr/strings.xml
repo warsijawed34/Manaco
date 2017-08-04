@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Monaco</string>
+
+    <!--Languages Strings-->
+    <string name="english">English</string>
+    <string name="french">français</string>
+    <string name="italiano">italiano</string>
+    <string name="siam2017">SIAM 2017</string>
+
+    <!--login/register strings-->
+    <string name="login">S\'identifier</string>
+    <string name="register">Registre</string>
+    <string name="skip">Sauter</string>
+    <string name="emailAdressCap">ADRESSE E-MAIL</string>
+    <string name="passwordCap">MOT DE PASSE</string>
+    <string name="passwordForgotten">Mot de passe oublié</string>
+    <string name="forgotPsd">Mot de passe oublié?</string>
+    <string name="loginCap">S\'IDENTIFIER</string>
+    <string name="userNameCap">NOM D\'UTILISATEUR</string>
+    <string name="regiterCap">REGISTRE</string>
+    <string name="confirmPassCap">CONFIRMEZ LE MOT DE PASSE</string>
+    <string name="createAcc">CRÉER UN COMPTE</string>
+    <string name="signup">S\'INSCRIRE</string>
+    <string name="login_successfully">Vous avez défini une connexion</string>
+    <string name="login_error">Veuillez vérifier votre nom d\'utilisateur et mot de passe</string>
+    <string name="registered_successfully">Vous vous êtes bien inscrit</string>
+
+    <string name="age">ÂGE</string>
+    <string name="gender">LE GENRE</string>
+    <string name="enterEmailAddress">Veuillez saisir une adresse e-mail</string>
+    <string name="validateEmailAdd">S\'il vous plaît, mettez une adresse email valide</string>
+    <string name="enterPassword">Veuillez entrer le mot de passe</string>
+    <string name="validatePassword">Le mot de passe doit comporter entre 8 et 12 caractères</string>
+    <string name="enterUserName">Veuillez entrer votre nom d\'utilisateur</string>
+    <string name="enterConfirmPass">Veuillez entrer confirmer le mot de passe</string>
+    <string name="validateConfirmPassword">Confirmer le mot de passe doit avoir entre 8 et 12 caractères</string>
+    <string name="matchConfirmPassword">Confirmer le mot de passe ne correspond pas</string>
+    <string name="enterAge">Veuillez choisir l\'âge</string>
+    <string name="enterGender">Veuillez sélectionner le sexe</string>
+    <string name="WrongEmailPassError">Adresse e-mail erronée \ni mauvais mot de passe \nVeuillez essayer de nouveau!</string>
+
+
+    <!--Reset Password Strings-->
+    <string name="resetPasswordCap">RÉINITIALISER LE MOT DE PASSE</string>
+    <string name="goToLogin">Accéder à la connexion</string>
+    <string name="backToLogin">Retour connexion</string>
+    <string name="resetPasswordLink">Un mot de passe de réinitialisation \nlink a été envoyé à votre adresse \nemail</string>
+
+
+
+    <!--Other Strings-->
+    <string name="connexion">Connexion</string>
+    <string name="ok">D\'accord</string>
+    <string name="or">OU</string>
+    <string name="title_activity_maps">Carte</string>
+    <string name="loading">Chargement</string>
+    <string name="search">Chercher</string>
+    <string name="cancel">Annuler</string>
+    <string name="api">http://104.131.179.118/monacoapp/public/api/</string>
+    <string name="internetConnection">Pas de connexion Internet</string>
+
+
+    <!--Home Strings-->
+    <string name="favorites">FAVORIS</string>
+    <string name="go">ALLER</string>
+    <string name="descriptionMapDetails">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ctetuer adipiscing elim.</string>
+    <string name="informations">Informations</string>
+    <string name="events">Événements</string>
+    <string name="title_activity_map_demo">Carte</string>
+    <string name="address">Adresse</string>
+    <string name="website">site Internet</string>
+
+
+    <!--Setting String-->
+    <string name="settingsCap">PARAMÈTRES</string>
+    <string name="accountCap">COMPTE</string>
+    <string name="actualitesCap">ACTUALITES</string>
+    <string name="foodnDrinksCap">ALIMENTS/BOISSONS</string>
+    <string name="shuttlesCap">NAVETTES</string>
+    <string name="servicesCap">PRESTATIONS DE SERVICE</string>
+    <string name="eventCap">ÉVÉNEMENTS</string>
+    <string name="exhibithorsCap">EXPOSANTS</string>
+    <string name="language">La langue</string>
+    <string name="notifications">Notifications</string>
+    <string name="pedometer">Pédomètre</string>
+    <string name="credits">Crédits</string>
+    <string name="UserName">Nom d\'utilisateur</string>
+    <string name="password">Mot de passe</string>
+    <string name="change">Changement</string>
+    <string name="autoPulusCap">NOUVELLES AUTOPLUS</string>
+
+    <!--otther strings-->
+    <string name="follow">Suivre</string>
+    <string name="unfollow">Unfollow</string>
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/langBG">
+
+    <include
+        android:id="@+id/llToolBar"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llToolBar"
+        android:background="@color/searchBG"
+        android:weightSum="4"
+        android:padding="@dimen/default_margin_half"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin_large"
+            android:background="@drawable/edittext_search"
+            android:padding="@dimen/default_margin_half5"
+            android:hint="@string/search"
+            android:inputType="text"
+            android:textCursorDrawable="@null"
+            android:imeOptions="actionSearch"
+            android:drawableLeft="@drawable/menu"
+            android:textSize="@dimen/normal_text_plus"
+            android:layout_weight="3"/>
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/default_margin_half5"
+            android:textSize="@dimen/normal_text_plus"
+            android:textColor="@android:color/black"
+            android:text="@string/cancel"/>
+    </LinearLayout>
+
+</RelativeLayout>

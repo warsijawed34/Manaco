@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lang_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_large_lan_bottom"
+        android:layout_marginLeft="@dimen/margin_extra_large"
+        android:layout_marginRight="@dimen/margin_extra_large"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group"/>
+        <!--Letter spacing work at API 21-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/siam2017"
+            android:textSize="@dimen/extra_large_text"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/default_margin_triple1"
+            android:background="@color/toolbarBgColor"/>
+        <Button
+            android:id="@+id/btnFrench"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_double"
+            android:textColor="@android:color/white"
+            android:background="@color/toolbarBgColor"/>
+        <Button
+            android:id="@+id/btnItaliano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_double"
+            android:textColor="@android:color/white"
+            android:background="@color/toolbarBgColor"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo_autuplus"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/default_margin_double" />
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llToolBar"
+    android:background="@color/langBG">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivIconLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="@dimen/default_margin_large"
+            android:paddingRight="@dimen/default_margin_large"
+            android:paddingBottom="@dimen/default_margin_large"
+            android:src="@drawable/menu" />
+
+        <TextView
+            android:id="@+id/tvRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/default_margin_half"
+            android:text="@string/connexion"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/normal_text"/>
+        <TextView
+            android:id="@+id/tvCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            android:background="@drawable/logo2"/>
+
+        <ImageView
+            android:id="@+id/ivRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/default_margin"
+            android:src="@drawable/find"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

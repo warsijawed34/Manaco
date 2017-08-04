@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#324060</color>
+    <color name="colorPrimaryDark">#324060</color>
+    <color name="colorAccent">#FFF</color>
+
+    <color name="colorRed">#D0021B</color>
+
+    <color name="buttonBgColor">#1A2F4C</color>
+    <color name="toolbarBgColor">#324055</color>
+    <color name="loginRegBG">#3B4B64</color>
+    <color name="langBG">#0a1e3d</color>
+    <color name="searchBG">#848E9D</color>
+    <color name="loginErrorBgColor">#EDBEC4</color>
+    <color name="errorTextColor">#D0021B</color>
+    <color name="transparent">#00000000</color>
+    <color name="greyListBG">#DBDEE3</color>
+    <color name="selectedTab">#DBDEE3</color>
+</resources>

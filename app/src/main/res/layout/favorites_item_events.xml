@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greyListBG"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_margin">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="@dimen/margin_top70"
+            android:layout_height="@dimen/margin_top70"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_autuplus"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin_half5"
+            android:layout_marginRight="@dimen/default_margin_half5"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="@string/feb16From"
+                android:textColor="@color/langBG"
+                android:textSize="@dimen/normal_text"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_half5"
+                android:text="Mercedes Benz"
+                android:textColor="@color/langBG"
+                android:textSize="@dimen/normal_text_plus"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivDateLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/shape"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/llRow"
+        android:background="@android:color/white"/>
+</RelativeLayout>

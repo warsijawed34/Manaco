@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/login_reg_tool"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/leftLinearLayout"
+        android:layout_width="@dimen/margin_top75"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/login_reg_tool"
+        android:orientation="vertical"
+        android:weightSum="8">
+
+        <LinearLayout
+            android:id="@+id/llExhibitors"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/loginRegBG"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/picto_exposant" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llEvent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/loginRegBG"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calender" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llService"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/loginRegBG"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/infos" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llShuttles"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/loginRegBG"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shuttle" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llFoodDrinks"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/loginRegBG"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/food" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llActualities"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorRed"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_autuplus" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llAccount"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorRed"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/account" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llSetting"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorRed"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/settings" />
+        </LinearLayout>
+    </LinearLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/login_reg_tool"
+       android:layout_toRightOf="@id/leftLinearLayout">
+
+       <com.google.android.gms.maps.MapView
+           android:id="@+id/mapViewExhibitors"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_gravity="center" />
+
+       <LinearLayout
+           android:id="@+id/llFavorites"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_marginBottom="@dimen/default_margin_double"
+           android:layout_marginLeft="@dimen/default_margin"
+           android:gravity="center_horizontal|center_vertical"
+           android:orientation="horizontal">
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:padding="@dimen/default_margin_half"
+               android:background="@color/langBG"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/favorites"
+                   android:textColor="@android:color/white"
+                   android:textSize="@dimen/normal_text_minus"
+                   android:drawableLeft="@drawable/whiteheart"
+                   android:drawablePadding="5dp"
+                   android:textStyle="bold" />
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/llList"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:padding="@dimen/default_margin_half"
+               android:background="@color/colorRed">
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/menu"/>
+
+           </LinearLayout>
+
+
+
+       </LinearLayout>
+
+       <ImageButton
+           android:id="@+id/ibNavigation"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/llFavorites"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginEnd="@dimen/default_margin_double"
+           android:layout_marginRight="@dimen/default_margin_double"
+           android:background="@android:color/white"
+           android:src="@drawable/geolocalisation" />
+
+   </RelativeLayout>
+
+</RelativeLayout>

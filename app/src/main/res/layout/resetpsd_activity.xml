@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/langBG">
+
+    <include
+        android:id="@+id/reset_tool_id"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/reset_tool_id"
+        android:layout_marginLeft="@dimen/default_margin_extra_large"
+        android:layout_marginRight="@dimen/default_margin_extra_large"
+        android:layout_marginTop="@dimen/default_margin_extra_large"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/resetPasswordCap"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/normal_text_large_extra"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvEmailId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_triple1"
+            android:text="@string/emailAdressCap"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/normal_text"
+            android:textStyle="bold" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tiEmailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etEmailAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:backgroundTint="@android:color/white"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/white" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/tvResePsdLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_top70"
+            android:gravity="center"
+            android:text="@string/resetPasswordLink"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/normal_text"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnResetPsd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top70"
+            android:background="@drawable/rounded_button"
+            android:text="@string/resetPasswordCap"
+            android:textColor="@color/buttonBgColor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvGoToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="@dimen/default_margin"
+            android:text="@string/goToLogin"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/normal_text" />
+
+    </LinearLayout>
+
+</RelativeLayout>

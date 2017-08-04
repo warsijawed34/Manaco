@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/llToolBar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/leftLinearLayout"
+        android:layout_width="@dimen/margin_top75"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llToolBar"
+        android:orientation="vertical"
+        android:weightSum="8">
+
+        <LinearLayout
+            android:id="@+id/llExhibitors"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/loginRegBG"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/picto_exposant" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llEvent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/loginRegBG"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calender" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llService"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/loginRegBG"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/infos" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llShuttles"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/loginRegBG"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shuttle" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llFoodDrinks"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/loginRegBG"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/food" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llActualities"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorRed"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_autuplus" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llAccount"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorRed"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/account" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llSetting"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorRed"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/settings" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llToolBar"
+        android:layout_toRightOf="@id/leftLinearLayout"
+        android:background="@android:color/white">
+
+        <fragment
+            android:id="@+id/mapViewNavigation"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="@dimen/margin_top70"
+            android:layout_height="@dimen/margin_top70"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/default_margin_half5"
+            android:layout_marginRight="@dimen/default_margin_half5"
+            android:layout_marginTop="@dimen/margin_410"
+            android:background="@drawable/close" />
+
+        <ImageView
+            android:id="@+id/ivNavigationDown"
+            android:layout_width="@dimen/margin_extra_large"
+            android:layout_height="@dimen/margin_extra_large"
+            android:layout_alignBottom="@+id/mapViewNavigation"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/default_margin"
+            android:src="@drawable/boussole" />
+        <ImageView
+            android:id="@+id/ivNavigationUp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/ivNavigationDown"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginRight="@dimen/default_margin_double"
+            android:src="@drawable/geolocalisation2" />
+
+        <LinearLayout
+            android:id="@+id/llDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/default_margin_half5"
+            android:layout_below="@id/mapViewNavigation">
+            <TextView
+                android:id="@+id/tvTimeMeter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_half5"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/langBG"
+                android:textSize="@dimen/normal_text_plus"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/langBG"
+                android:textSize="@dimen/normal_text" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/llToolBar"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:id="@+id/scrollDown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llToolBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rlExhibithors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/loginRegBG"
+                android:padding="@dimen/default_margin_extra_large22">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_large30"
+                    android:layout_height="@dimen/margin_large30"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/picto_exposant"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/exhibithorsCap"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/normal_text_minus"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/default_margin_double"
+                    android:src="@drawable/arrowright"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/rlExhibithors"
+                android:background="@android:color/white"/>
+
+            <com.manaco.utils.ExpandableHeight
+                android:id="@+id/expandableListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/view1"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="0.5dp"
+                android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+                android:visibility="visible"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rlEVent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expandableListView"
+                android:background="@color/loginRegBG"
+                android:padding="@dimen/default_margin_extra_large22">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_large30"
+                    android:layout_height="@dimen/margin_large30"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/calender"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/eventCap"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/normal_text_minus"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/default_margin_double"
+                    android:src="@drawable/arrowright"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/rlEVent"
+                android:background="@android:color/white"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rlServices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view2"
+                android:background="@color/loginRegBG"
+                android:padding="@dimen/default_margin_extra_large22">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_large30"
+                    android:layout_height="@dimen/margin_large30"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/infos"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/servicesCap"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/normal_text_minus"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/default_margin_double"
+                    android:src="@drawable/arrowright"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/rlServices"
+                android:background="@android:color/white"/>
+
+            <RelativeLayout
+                android:id="@+id/rlShuttles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view3"
+                android:background="@color/loginRegBG"
+                android:padding="@dimen/default_margin_extra_large22">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_large30"
+                    android:layout_height="@dimen/margin_large30"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/shuttle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/shuttlesCap"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/normal_text_minus"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/default_margin_double"
+                    android:src="@drawable/arrowright"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/rlShuttles"
+                android:background="@android:color/white"/>
+
+            <RelativeLayout
+                android:id="@+id/rlFoodnDrinks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view4"
+                android:background="@color/loginRegBG"
+                android:padding="@dimen/default_margin_extra_large22">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_large30"
+                    android:layout_height="@dimen/margin_large30"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/food"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/foodnDrinksCap"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/normal_text_minus"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/default_margin_double"
+                    android:src="@drawable/arrowright"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/rlFoodnDrinks"
+                android:background="@android:color/white"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rlActualites"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view5"
+                android:background="@color/colorRed"
+                android:padding="@dimen/default_margin_extra_large22">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_large30"
+                    android:layout_height="@dimen/margin_large30"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/autoplus"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/actualitesCap"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/normal_text_minus"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/default_margin_double"
+                    android:src="@drawable/arrowright"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/rlActualites"
+                android:background="@android:color/white"/>
+
+            <RelativeLayout
+                android:id="@+id/rlAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view6"
+                android:background="@color/colorRed"
+                android:padding="@dimen/default_margin_extra_large22">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_large30"
+                    android:layout_height="@dimen/margin_large30"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/account"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/accountCap"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/normal_text_minus"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/default_margin_double"
+                    android:src="@drawable/arrowright"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/rlAccount"
+                android:background="@android:color/white"/>
+
+            <RelativeLayout
+                android:id="@+id/rlAccInclude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view7"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/include_account"
+                    layout="@layout/account_include"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlAccInclude"
+                android:background="@color/colorRed"
+                android:padding="@dimen/default_margin_extra_large22">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_large30"
+                    android:layout_height="@dimen/margin_large30"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/settings"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/settingsCap"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/normal_text_minus"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/default_margin_double"
+                    android:src="@drawable/arrowright"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlSettingInclude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlSetting"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/include_setting"
+                    layout="@layout/setting_include"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+

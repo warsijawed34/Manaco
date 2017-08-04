@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/llToolBar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/leftLinearLayout"
+        android:layout_width="@dimen/margin_top75"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llToolBar"
+        android:orientation="vertical"
+        android:weightSum="8">
+
+        <LinearLayout
+            android:id="@+id/llExhibitors"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/loginRegBG"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/picto_exposant" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llEvent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/loginRegBG"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calender" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llService"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/loginRegBG"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/infos" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llShuttles"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/loginRegBG"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shuttle" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llFoodDrinks"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/loginRegBG"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/food" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llActualities"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorRed"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_autuplus" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llAccount"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorRed"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/account" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/llSetting"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorRed"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/settings" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollDown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llToolBar"
+        android:layout_toRightOf="@id/leftLinearLayout"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+
+            <RelativeLayout
+                android:id="@+id/mapRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <fragment
+                    android:id="@+id/mapViewDetails"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_250" />
+
+                <Button
+                    android:id="@+id/btnGo"
+                    android:layout_width="@dimen/margin_top70"
+                    android:layout_height="@dimen/margin_top70"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="@dimen/default_margin_half5"
+                    android:layout_marginRight="@dimen/default_margin_half5"
+                    android:layout_marginTop="@dimen/margin_220"
+                    android:background="@drawable/group_9_copy"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/autoPlusLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mapRelativeLayout"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_LogoExbMapDetails"
+                    android:layout_width="@dimen/margin_top70"
+                    android:layout_height="@dimen/margin_top70"
+                    android:padding="@dimen/default_margin"
+                    android:src="@drawable/logo_autuplus" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_NameExb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Mercedes Benz"
+                        android:textColor="@color/langBG"
+                        android:textSize="@dimen/normal_text_large"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_NameDetailsExb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Manufacturer"
+                        android:textColor="@color/langBG"
+                        android:textSize="@dimen/normal_text" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/autoPlusLinearLayout"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:maxLines="5"
+                android:text="@string/descriptionMapDetails"
+                android:textColor="@color/langBG"
+                android:textSize="@dimen/normal_text_minus" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_description"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tv_informations"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/default_margin_half5"
+                    android:drawableTop="@drawable/info50px"
+                    android:gravity="center"
+                    android:text="@string/informations"
+                    android:textColor="@color/langBG"
+                    android:textSize="@dimen/normal_text_minus"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_event"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/default_margin_half5"
+                    android:drawableTop="@drawable/events50px"
+                    android:gravity="center"
+                    android:text="@string/events"
+                    android:textColor="@color/langBG"
+                    android:textSize="@dimen/normal_text_minus"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_follow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/default_margin_half5"
+                    android:drawableTop="@drawable/greyheart50px"
+                    android:gravity="center"
+                    android:text="@string/follow"
+                    android:textColor="@color/langBG"
+                    android:textSize="@dimen/normal_text_minus"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llEVentInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linearLayout"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+        <android.support.v7.widget.RecyclerView
+                          android:id="@+id/rvEvent"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent">
+                      </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llInformations"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginRight="@dimen/default_margin"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/ivInfoLogo"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/car" />
+
+                    <TextView
+                        android:id="@+id/tvTittle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/descriptionMapDetails"
+                        android:textColor="@color/langBG"
+                        android:textSize="@dimen/normal_text"
+                        android:maxLines="2"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTittleDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="6"
+                        android:text="@string/descriptionMapDetails"
+                        android:textColor="@color/langBG"
+                        android:textSize="@dimen/smallest_text" />
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/situation"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:textColor="@color/langBG"
+                    android:textSize="@dimen/normal_text"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvSituation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="10 rue grimaldi Stand C4"
+                    android:textColor="@color/langBG"
+                    android:textSize="@dimen/smallest_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:textColor="@color/langBG"
+                    android:textSize="@dimen/normal_text"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="00 37737589 355345"
+                    android:textColor="@color/langBG"
+                    android:textSize="@dimen/smallest_text" />
+                <TextView
+                    android:id="@+id/tvEmailAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="contact@monaco.com"
+                    android:textColor="@color/langBG"
+                    android:textSize="@dimen/smallest_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_half5"
+                    android:text="@string/website"
+                    android:textColor="@color/langBG"
+                    android:textSize="@dimen/normal_text"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvWebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="www.mercedesbenz.com"
+                    android:textColor="@color/langBG"
+                    android:textSize="@dimen/smallest_text" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

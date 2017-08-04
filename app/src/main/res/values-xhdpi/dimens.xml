@@ -1,0 +1,33 @@
+<resources>
+    <!--Custom dimen-->
+    <dimen name="smaller_text">10sp</dimen>
+    <dimen name="smallest_text">12sp</dimen>
+    <dimen name="normal_text_minus">14sp</dimen>
+    <dimen name="normal_text">16sp</dimen>
+    <dimen name="normal_text_plus">18sp</dimen>
+    <dimen name="normal_text_large">20sp</dimen>
+    <dimen name="normal_text_large_extra">22sp</dimen>
+    <dimen name="large_text_minus">26sp</dimen>
+    <dimen name="large_text">30sp</dimen>
+    <dimen name="extra_large_text">38sp</dimen>
+    <dimen name="margin">7dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_large30">30dp</dimen>
+    <dimen name="margin_left_right">40dp</dimen>
+    <dimen name="margin_extra_large">50dp</dimen>
+    <dimen name="margin_extra_large60">60dp</dimen>
+    <dimen name="margin_top70">70dp</dimen>
+    <dimen name="margin_top75">75dp</dimen>
+    <dimen name="margin_large_lan_bottom">120dp</dimen>
+    <dimen name="margin_top">200dp</dimen>
+    <dimen name="margin_top220">200dp</dimen>
+    <dimen name="margin_220">220dp</dimen>
+    <dimen name="margin_250">250dp</dimen>
+    <dimen name="margin_330">330dp</dimen>
+    <dimen name="margin_360">360dp</dimen>
+    <dimen name="margin_380">380dp</dimen>
+    <dimen name="margin_410">410dp</dimen>
+    <dimen name="margin_440">440dp</dimen>
+
+</resources>

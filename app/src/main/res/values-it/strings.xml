@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Monaco</string>
+
+    <!--Languages Strings-->
+    <string name="english">English</string>
+    <string name="french">français</string>
+    <string name="italiano">italiano</string>
+    <string name="siam2017">SIAM 2017</string>
+
+    <string name="com_auth0_client_id">f47lSVZ0FriC6L2I6FEmrvHXavNWs0NE</string>
+    <string name="com_auth0_domain">YOUR_DOMAIN</string>
+
+    <!--login/register strings-->
+    <string name="login">Accesso</string>
+    <string name="register">Registro</string>
+    <string name="skip">Salta</string>
+    <string name="emailAdressCap">INDIRIZZO EMAIL</string>
+    <string name="passwordCap">PAROLA D\'ORDINE</string>
+    <string name="passwordForgotten">Hai dimenticato la password</string>
+    <string name="forgotPsd">Ha dimenticato la password?</string>
+    <string name="loginCap">ACCESSO</string>
+    <string name="userNameCap">NOME UTENTE</string>
+    <string name="regiterCap">REGISTRO</string>
+    <string name="confirmPassCap">CONFERMA PASSWORD</string>
+    <string name="createAcc">CREA UN ACCOUNT</string>
+    <string name="signup">REGISTRAZIONE</string>
+    <string name="login_successfully">Devi entra con successo</string>
+    <string name="login_error">Verifica il tuo nome utente e la password</string>
+    <string name="registered_successfully">Ti sei registrato con successo</string>
+
+
+    <string name="age">ETÀ</string>
+    <string name="gender">GENERE</string>
+    <string name="enterEmailAddress">Si prega di inserire l\'indirizzo e-mail</string>
+    <string name="validateEmailAdd">Si prega di inserire un indirizzo email valido</string>
+    <string name="enterPassword">Per favore, inserisci la password</string>
+    <string name="validatePassword">Password deve essere compreso tra 8 a 12 caratteri</string>
+    <string name="enterUserName">Si prega di inserire il nome utente</string>
+    <string name="enterConfirmPass">Si prega di inserire la password di confermare</string>
+    <string name="validateConfirmPassword">Confermare la password deve essere compreso tra 8 a 12 caratteri</string>
+    <string name="matchConfirmPassword">Confermare la password non corrisponde</string>
+    <string name="enterAge">Si prega di selezionare l\'età</string>
+    <string name="enterGender">Seleziona genere</string>
+    <string name="WrongEmailPassError">Sbagliato indirizzo email \né password errata \nPer favore riprova!</string>
+
+
+    <!--Reset Password Strings-->
+    <string name="resetPasswordCap">RESETTA LA PASSWORD</string>
+    <string name="goToLogin">Vai a login</string>
+    <string name="backToLogin">Torna al login</string>
+    <string name="resetPasswordLink">Una password di ripristino \nlink è stato inviato al tuo indirizzo \nemail</string>
+
+
+
+    <!--Other Strings-->
+    <string name="connexion">Connexion</string>
+    <string name="ok">ok</string>
+    <string name="or">O</string>
+    <string name="title_activity_maps">Carta geografica</string>
+    <string name="loading">Caricamento in corso</string>
+    <string name="search">Ricerca</string>
+    <string name="cancel">Annulla</string>
+    <string name="api">http://104.131.179.118/monacoapp/public/api/</string>
+    <string name="internetConnection">Nessuna connessione Internet</string>
+
+    <!--Home Strings-->
+    <string name="favorites">PREFERITI</string>
+    <string name="go">ANDARE</string>
+    <string name="descriptionMapDetails">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ctetuer adipiscing elim.</string>
+    <string name="informations">informazioni</string>
+    <string name="events">eventi</string>
+    <string name="title_activity_map_demo">Carta geografica</string>
+    <string name="address">Indirizzo</string>
+    <string name="website">Sito web</string>
+
+    <!--Setting String-->
+    <string name="settingsCap">IMPOSTAZIONI</string>
+    <string name="accountCap">ACCOUNT</string>
+    <string name="actualitesCap">ACTUALITES</string>
+    <string name="foodnDrinksCap">CIBO/BEVANDE</string>
+    <string name="shuttlesCap">NAVETTE</string>
+    <string name="servicesCap">SERVIZI</string>
+    <string name="eventCap">EVENTI</string>
+    <string name="exhibithorsCap">EXHIBITHORS</string>
+    <string name="language">Lingua</string>
+    <string name="notifications">Notifiche</string>
+    <string name="pedometer">Pedometro</string>
+    <string name="credits">Crediti</string>
+    <string name="UserName">Nome utente</string>
+    <string name="password">Parola d\'ordine</string>
+    <string name="change">Cambiamento</string>
+    <string name="autoPulusCap">AUTOPLUS NEWS</string>
+
+    <!--otther strings-->
+    <string name="follow">Seguire</string>
+    <string name="unfollow">Smetti</string>
+
+</resources>
